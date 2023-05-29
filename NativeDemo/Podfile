@@ -1,0 +1,15 @@
+# flutter路径
+flutter_application_path = '../flutter_module'
+# 加载 参数1:flutter路径 2:iOS 3:这是flutter工程 4:podhelper.rb
+load File.join(flutter_application_path,'.iOS','Flutter','podhelper.rb')
+
+platform :ios, '9.0'
+
+target 'NativeDemo' do
+  # 安装
+  install_all_flutter_pods(flutter_application_path)
+  use_frameworks!
+
+  # Pods for NativeDemo
+
+end
