@@ -6,6 +6,7 @@ import 'package:flutter_demo/KeyDemo/global_key_demo.dart';
 import 'package:flutter_demo/KeyDemo/key_demo.dart';
 import 'package:flutter_demo/account/account.dart';
 import 'package:flutter_demo/base_widget.dart';
+import 'package:flutter_demo/chart/chart_demo.dart';
 import 'package:flutter_demo/json_map/json_map.dart';
 import 'package:flutter_demo/lifecycle/inherited_demo.dart';
 import 'package:flutter_demo/local_storage/index.dart';
@@ -162,6 +163,13 @@ class _DiscoverPageState extends State<DiscoverPage> {
               title: '记账Demo',
               onTapCallBack: () {
                 navigatorPush(context, const Account());
+              },
+            ),
+            DiscoverCell(
+              imageName: defaultImageName,
+              title: '柱状图Demo',
+              onTapCallBack: () {
+                navigatorPush(context, const ChartBarPainter());
               },
             ),
             sizeBoxWidget(),
